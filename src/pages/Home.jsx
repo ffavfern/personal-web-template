@@ -5,7 +5,7 @@ import Services from "../components/Services";
 import Socials from "../components/Socials";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+
 
 
 const Home = () => {
@@ -13,7 +13,7 @@ const Home = () => {
     <>
     
     {/* Hero Section */}
-    <Navbar/>
+    
       <Hero />
       <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100"> 
 
@@ -26,12 +26,13 @@ const Home = () => {
 
         {/* Services Section */}
         <Services/>
-
+        <div className="flex w-1/2 justify-between items-center">
 
         {/* Socials Section */}
         <Socials/>
         {/* Contact Section */}
         <Contact/>
+        </div>
         
       </div>
       {/* Footer Section */}

@@ -56,7 +56,7 @@ const Services = () => {
             {services.map((service) => (
               <motion.div
                 key={service.title} // Use a unique key for each service item
-                className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center"
+                className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center p-10"
                 initial={{ y: 50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.6, duration: 0.8 }}
